@@ -1,6 +1,6 @@
 import { Grid, Card, Tabs, Typography, Tab, Box } from '@mui/material';
 import { useState } from 'react';
-import Pic1 from '../../../images/pic1.png'
+import Draw from '../../../images/undraw_Experience_design_re_dmqq (1).png'
 import Registration from './Registration';
 import UserLogin from './UserLogin';
 import { ShoppingBag } from '@mui/icons-material';
@@ -25,7 +25,7 @@ const LoginReg = () => {
   return <>
     <Grid container sx={{ height: '90vh' }}>
       <Grid item lg={7} sm={5} sx={{
-        backgroundImage: `url(${Pic1})`,
+        backgroundImage: `url(${Draw})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -36,7 +36,7 @@ const LoginReg = () => {
         <Card sx={{ width: '100%', height: '100%' }}>
           <Box sx={{ mx: 3, height: 530 }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-              <Tabs value={value} textColor='secondary' indicatorColor='secondary' onChange={handleChange}>
+              <Tabs value={value} textColor='primary' indicatorColor='secondary' onChange={handleChange}>
                 <Tab label='Login' sx={{ textTransform: 'none', fontWeight: 'bold' }}></Tab>
                 <Tab label='Registration' sx={{ textTransform: 'none', fontWeight: 'bold' }}></Tab>
               </Tabs>
@@ -49,8 +49,8 @@ const LoginReg = () => {
             </TabPanel>
           </Box>
           <Box textAlign='center' sx={{ mt: 2 }}>
-            <ShoppingBag sx={{ color: 'purple', fontSize: 100 }} />
-            <Typography variant='h5' sx={{ fontWeight: 'bold' }}>Geek-Shop</Typography>
+            <ShoppingBag sx={{ color: 'blue', fontSize: 100 }} />
+            <Typography variant='h5' sx={{ fontWeight: 'bold' }}>Dashing Enterprises</Typography>
           </Box>
         </Card>
       </Grid>

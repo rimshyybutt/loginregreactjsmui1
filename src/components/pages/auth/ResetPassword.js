@@ -24,7 +24,7 @@ const ResetPassword = () => {
           navigate("/login")
         }, 3000)
       } else {
-        setError({ status: true, msg: "Password and Confirm Password Doesn't Match", type: 'error' })
+        setError({ status: true, msg: "Password and that Confirm Password Doesn't Match", type: 'error' })
       }
     } else {
       setError({ status: true, msg: "All Fields are Required", type: 'error' })

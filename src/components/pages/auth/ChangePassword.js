@@ -17,9 +17,9 @@ const ChangePassword = () => {
       if (actualData.password === actualData.password_confirmation) {
         console.log(actualData);
         document.getElementById("password-change-form").reset();
-        setError({ status: true, msg: "Password Changed Successful", type: "success" });
+        setError({ status: true, msg: "Password Changed Successfully", type: "success" });
       } else {
-        setError({ status: true, msg: "Password and Confirm Password Doesn't Match", type: "error" })
+        setError({ status: true, msg: "Password and Confirm that Password doesn't Match", type: "error" })
       }
     } else {
       setError({ status: true, msg: "All Fields are Required", type: "error" })
